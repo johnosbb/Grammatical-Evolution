@@ -9,4 +9,4 @@ We attempt to profile the problem search spaces revealing complex, noisy, discon
 This research demonstrates GE's ability to work successfully and seamlessly with a broad range of different search approaches and identifies  distinct performance advantages for population based approaches like EP, ES and GAs. This flexibility establishes GE as a powerful and flexible mechanism for the automatic generation of grammar based code and programs. 
 
 
-[Maters Thesis in Full](https://github.com/johnosbb/Grammatical-Evolution/blob/main/Masters_2021.pdf)
+[Masters Thesis in full is available here](https://github.com/johnosbb/Grammatical-Evolution/blob/main/Masters_2021.pdf)
