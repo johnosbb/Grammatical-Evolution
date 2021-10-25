@@ -128,7 +128,7 @@ non-terminals. A grammar can be represented by the tuple $<N,T,P,S>$ ,
 where N is the set of non-terminals, T the set of terminals, P a set of
 production rules used to map elements of N to T. S a start symbol is a
 member of N.
-$$\
+```
 +:------------------------------------------------------------------------+
 |     N = {expr,op}                                                       |
 |     T = {+,-,/,*,X,(,)}                                                 |
@@ -140,7 +140,7 @@ $$\
 |     <op>       :: == + | - | * | /                                      |
 |     <pre-op>   :: == sin | cos | tan | log                              |
 +-------------------------------------------------------------------------+
-$$
+```
  
 
 ### Derivation Trees
