@@ -1,0 +1,56 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Simple grammar presented in table form.}}{10}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Analysis of Depth First Mapping.}}{11}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Analysis of Depth First Mapping (continued).}}{12}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Parameters used to configure Random Search.}}{44}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Results from Trials of Random Search.}}{45}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Analysis of Characteristics from Solutions found by Random Search.}}{46}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Results from 1000 trials of Random Search with Wrapping disabled on the problem set.}}{47}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Parameters used to configure the Hill Climbing Search Algorithm.}}{51}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Results from the Hill Climbing Trials.}}{52}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Impact of Zero Improvement Acceptance on the Hill Climbing Search Algorithm.}}{52}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Effect of Variation of Initial Genome Length on Success Rate for Hill Climbing on the Symbolic Integration Problem.}}{53}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Effect of variation of operators on success rate for Hill Climbing on the Symbolic Integration problem.}}{56}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Effect of variation of operators on success rate for Hill Climbing on the Santa Fe Trail problem.}}{56}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Effect of reduced probability for shrink and grow operators on success rate for Hill Climbing on the Blocks problem.}}{57}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Analysis of Characteristics from Solutions found by Hill Climbing.}}{57}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Parameters used for the Simulated Annealing Search Algorithm.}}{63}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Results from 500 trials of Simulated Annealing on the Symbolic Integration Problem for a Range of Starting Temperatures.}}{66}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Results from 500 trials of Simulated Annealing on the Santa Fe Trail Problem for a Range of Starting Temperatures.}}{66}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Results from 500 trials of Simulated Annealing on the Blocks Problem for a Range of Starting Temperatures.}}{67}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Results from the Simulated Annealing Trials.}}{67}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Analysis of Characteristics from Solutions found by Simulated Annealing.}}{68}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {8.1}{\ignorespaces Parameters used to configure the Genetic Algorithm.}}{71}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Results from the Genetic Algorithm Trials.}}{72}
+\contentsline {table}{\numberline {8.3}{\ignorespaces Analysis of Contribution of GA Operators to the Success Rate for Trials.}}{73}
+\contentsline {table}{\numberline {8.4}{\ignorespaces Analysis of Contribution of GA Operators to Productive Parent's Average Fitness for the Selected Problems.}}{74}
+\contentsline {table}{\numberline {8.5}{\ignorespaces Analysis of Features from Solutions found by the Genetic Algorithm.}}{76}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {9.1}{\ignorespaces Parameters used to Configure Evolutionary Strategies.}}{80}
+\contentsline {table}{\numberline {9.2}{\ignorespaces Comparative Analysis of ES Strategies.}}{81}
+\contentsline {table}{\numberline {9.3}{\ignorespaces Comparative Analysis of Mutation Rates and Ranges for Santa Fe and Symbolic Regression}}{82}
+\contentsline {table}{\numberline {9.4}{\ignorespaces Final Results from Evolutionary Strategies Trials.}}{83}
+\contentsline {table}{\numberline {9.5}{\ignorespaces Analysis of Characteristics from Solutions found by Evolutionary Strategies.}}{84}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {10.1}{\ignorespaces Parameters used to Configure Evolutionary Programming.}}{87}
+\contentsline {table}{\numberline {10.2}{\ignorespaces Analysis of EP Strategy Variables showing Success Rates with and without Mutation Bias}}{88}
+\contentsline {table}{\numberline {10.3}{\ignorespaces Results from Evolutionary Programming Trials.}}{88}
+\contentsline {table}{\numberline {10.4}{\ignorespaces Analysis of Features from Solutions found by Evolutionary Programming.}}{89}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {11.1}{\ignorespaces A Summary of Success Rates for all Metaheuristics.}}{92}
+\contentsline {table}{\numberline {11.2}{\ignorespaces Percentage fall off in Fitness of Immediate Neighbours for all Problems.}}{94}
+\contentsline {table}{\numberline {11.3}{\ignorespaces A Summary of Successful Solution sizes for all Metaheuristics.}}{100}
+\contentsline {table}{\numberline {11.4}{\ignorespaces Results from a Comparative Analysis of GA with no crossover and EP.}}{101}
+\contentsline {table}{\numberline {11.5}{\ignorespaces Parameters used to configure the Fixed Length Genetic Algorithm.}}{103}
+\contentsline {table}{\numberline {11.6}{\ignorespaces Parameters used to Configure Evolutionary Programming.}}{104}
+\contentsline {table}{\numberline {11.7}{\ignorespaces Analysis of the Impact of Fixed and Variable Length Genomes on GA without crossover and EP.}}{105}
+\contentsline {table}{\numberline {11.8}{\ignorespaces Proportion of Wrapping appearing in Successful Solutions for all Metaheuristics.}}{106}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

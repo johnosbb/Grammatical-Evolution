@@ -1,0 +1,40 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example Grammar presented in Backus Naur Form.}}{5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Derivation Tree for the Expression $x + sin(x)$.}}{6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Parse Tree for the Expression $x + sin(x)$.}}{7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Grammatical Evolution model.}}{8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Genome used in example of mapping process.}}{10}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Crossover Operator with Mutation}}{17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Duplicate and Swap Operators}}{17}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ripple Crossover Derivation Tree}}{18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Ripple Crossover, Derivation Tree Spine after Crossover.}}{19}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Ripple Crossover, Derivation Tree Tails after Crossover.}}{19}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Operators, used by Hill Climbing and Simulated Annealing to explore the search space.}}{25}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Discrete Recombination}}{33}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Intermediate Recombination}}{34}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Sante Fe Trail.}}{37}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Typical Starting Position for the Blocks Problem.}}{40}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Move Stack operation.}}{41}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Move Table operation.}}{41}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Move Table operation.}}{42}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Variation in Genome Length for a Successful Hill Climbing Trial on the Santa Fe Trail problem.}}{55}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Search Trajectory for a successful Hill Climbing trial}}{59}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Probability of accepting a dis-improving Solution for a Range of Score Deltas}}{64}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Probability of accepting a dis-improving Solution for a Range of Temperatures}}{65}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Search Trajectory for a Successful Simulated Annealing Trial}}{69}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Neighbourhood of a Solution for The Santa Fe Trail Problem.}}{95}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Neighbourhood of the Solution for The Symbolic Integration Problem.}}{97}
+\contentsline {figure}{\numberline {11.3}{\ignorespaces Neighbourhood of a Solution for The Blocks Stacking Problem.}}{98}
+\contentsline {figure}{\numberline {11.4}{\ignorespaces Neighbourhood of a solution for The Symbolic Regression Problem.}}{98}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

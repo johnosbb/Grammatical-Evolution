@@ -1,0 +1,78 @@
+\documentclass[12pt,a4paper,onecolumn,titlepage,oneside]{book}
+\linespread{1.5}
+\usepackage{psfig}
+%\includeonly{TitlePage/toc}
+%\includeonly{Chapter1/chapter1, BackMatter/back}
+\bibliographystyle{alpha}
+\pagestyle{plain}
+\newcommand{\dspaceon}{\renewcommand{\baselinestretch}{1.5}\large\normalsize}
+\newcommand{\dspaceoff}{\renewcommand{\baselinestretch}{1}\large\normalsize}
+
+\title{An Investigation into Grammatical Evolution Search Strategies}
+\author{John O'Sullivan\\Department of Computer Science Information Systems\\
+University of Limerick\\}
+
+\date{A thesis presented for the award of the MSc degree of the University of Limerick\\Supervisor: Dr. Conor Ryan\\Submitted to the University of Limerick March 2003}
+
+
+\begin{document}
+
+\maketitle
+\frontmatter 
+\include{TitlePage/toc} %includes the file toc.tex from the dir TitlePage/
+\tableofcontents
+\include{TitlePage/tof} %includes the file tof.tex from the dir TitlePage/
+\listoffigures
+\include{TitlePage/tot} %includes the file tot.tex from the dir TitlePage/
+\listoftables
+
+%\newpage
+%\include{acks}
+
+\newpage
+\include{acks}
+\newpage
+\linespread{1}
+\include{abstract}
+\linespread{1.5}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formats main chapters
+
+
+\mainmatter
+\include{Chapter1/chapter1}  %includes the file chapter1.tex from the dir Chapter1/
+\include{Chapter2/chapter2}
+\include{Chapter3/chapter3}
+\include{Chapter4/chapter4}
+\include{Chapter5/chapter5}
+\include{Chapter6/chapter6}
+\include{Chapter7/chapter7}
+\include{Chapter8/chapter8}
+\include{Chapter9/chapter9}
+\include{Chapter10/chapter10}
+\include{Chapter11/chapter11}
+\include{Chapter12/chapter12}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formats bib, index
+% Appendices
+\backmatter
+\include{AppendixA/appendixa}
+\include{BackMatter/back}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+*************************************************************************
+
+
+
+
+
+
+
+
+
+
+

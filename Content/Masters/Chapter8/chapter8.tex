@@ -1,0 +1,176 @@
+\chapter{Genetic Algorithms}
+\section{Introduction}
+In this chapter we look at the performance of Variable-length Genetic Algorithms, the search strategy which has been used in all previously published work on GE. We begin with some discussion on the search parameters selected for Genetic Algorithms and then present the results of the trials with some analysis of the contribution made by the chosen operators. The last section of the chapter looks at productive parents (i.e. parents whose offspring achieve perfect fitness), examining the fitness values of these parents and the operators that influence the final transition to successful solution.
+
+
+\section{Search Strategy Options}
+For consistency with previous  metaheuristics each trial is permitted 25000 evaluations of the objective function, consisting of 50 generations of 500 individuals.  Four operators are used, Mutation (.01), crossover (.09), duplication (.01) and swap (.01). These values were influenced by previous published research~\cite{ieee2001} on GE.  
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Parameter &\multicolumn{4}{l|}{Problems}\\
+\cline{2-1} \cline{3-1} \cline{4-1} \cline{5-1} 
+ & Sym Int & Santa Fe & Blocks & Sym Reg  \\
+\hline
+Number of Trials & 1000 & 1000 & 1000 & 1000 \\
+Number of Objective & & & & \\ 
+Function Evaluations  & 25000 & 25000 & 25000 & 25000  \\
+Initial Genome Length Range & 10-100 & 10-100 & 10-100 & 10-100  \\
+Population Size  & 500 & 500 & 500 & 500  \\
+Number of Generations  & 50 & 50 & 50 & 50  \\
+Probability of Swap  & .01  & .01  & .01 & .01   \\
+Probability of Duplication   & .01  & .01  & .01 & .01  \\
+Probability of Crossover & .90  & .90  & .90 & .90  \\
+Probability of Mutation & .01  & .01  & .01 & .01  \\
+\hline
+\end{tabular}
+\caption{\label{ga_param_table} Parameters used to configure the Genetic Algorithm.}
+\end{center}
+\end{table}
+
+\section{Experimental Conditions}
+The parameters used to configure GA for these trials are presented in Table~\ref{ga_param_table}. In addition to these \emph{Remainder Stochastic Sampling without replacement} was used as the selection mechanism, with a steady state replacement model used to refine the population at each generation and one point crossover employed as the recombination mechanism.
+
+\section{Results}
+
+Table~\ref{ga_results_table} shows the results from the Genetic Algorithm trials. Symbolic Integration proves to be the easiest to solve scoring 100\% success, Blocks scores 99.5\% and Santa Fe has a score of 81\%. With a score of 36\% the Genetic Algorithm successfully solves the Symbolic Regression problem following previous failures by Random Search, Hill Climbing and Simulated Annealing.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Problem & Successful Runs \\
+\hline
+Symbolic Integration & 100\% \\
+Santa Fe Trail & 81\% \\
+Blocks & 99.5\% \\
+Symbolic Regression & 36\% \\
+\hline
+\end{tabular}
+\caption{\label{ga_results_table} Results from the Genetic Algorithm Trials.}
+\end{center}
+\end{table}
+
+
+
+\section{Productive Parents in GA}
+\emph{Productive parents} are parents whose offspring achieve perfect fitness. To understand the relationship between parent and the way in which the child is produced we have analysed the contribution of the operators used. Table~\ref{pp1_table} provides an insight into the contribution of the various GA operators, mutation, crossover, duplication and swap on each of the problems. 
+
+Productive parents of Santa Fe solutions are typically of mid to high fitness averaging a score of 43. An examination of the evolution from productive parent to fit child reveals that both crossover and mutation operators occur in the successful transitions.
+
+\label{operator_removal}Table~\ref{pp1_table} also shows the effect of removing each operator in turn for the Santa Fe problem. Removing the mutation operator from GA results in a slight decrease in the success rate, while removal of the crossover operator significantly degrades performance. An examination of the results in Table~\ref{pp2_table} shows that the average fitness value of the productive parent does not change significantly.  When the crossover operator is removed the transition from productive parent to fit child is achieved through a combination of mutation and the duplication operator. Removing the duplication operator has no significant impact on performance while removal of the swap operator results in a slight decrease in the success rate. 
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+&\multicolumn{4}{|l|}{Successful Trials}\\
+\hline
+Operators Used  & Santa Fe & Sym Integration & Sym Regression & Blocks\\
+\hline
+All operators present  & 81\% &  100\% & 36.4\% & 99.5\%\\
+Mutation excluded  & 76.2\% & 99\% & 14.1\% & 98\%\\
+Crossover excluded & 18.9\% & 11\% & 0.59\% & 4.7\%\\
+Swap excluded  & 68.3\% & 100\% & 34.2\% & 99.1\% \\
+Duplication excluded & 82.3\% & 100\% & 41.4\% & 98.6\%\\
+
+\hline
+\end{tabular}
+\caption{\label{pp1_table} Analysis of Contribution of GA Operators to the Success Rate for Trials.}
+\end{center}
+\end{table}
+
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+&\multicolumn{4}{|l|}{Average Fitness}\\
+\hline
+Operators Used  & Santa Fe & Sym Integration & Sym Regression & Blocks\\
+\hline
+Maximum Fitness & 89 & 1 & 1 & 30 \\
+All operators present  & 43 &  0.0952 & 0.625  & 16\\
+Mutation excluded  & 50 & 0.1039 & 0.5549 & 17 \\
+Crossover excluded & 44 & 0.1060 & 0.383 & 20 \\
+Swap excluded  & 57 & 0.099 & 0.607 & 17 \\
+Duplication excluded & 49.7 & 0.0944 & 0.630 & 17\\
+\hline
+\end{tabular}
+\caption{\label{pp2_table} Analysis of Contribution of GA Operators to Productive Parent's Average Fitness for the Selected Problems.}
+\end{center}
+\end{table}
+
+GA parents for the Symbolic Integration problem are typically of low fitness, indeed 64\% of all productive parents map to the same building block $x^2 + x$ which has a fitness of 0.109735. A combination of both mutation and crossover features predominantly in the final steps to the perfectly fit child. The contribution of the mutation and crossover operators to the Symbolic Integration problem are shown in rows two and three of Table~\ref{pp2_table}. Removing mutation has no influence of the success rate, however removing the crossover operator sees the performance drop dramatically falling to a success rate of 11\%. The average fitness of the productive parents for this problem shows no significant change (see Table~\ref{pp2_table}) when specific operators are excluded. 
+
+
+The Blocks problem shows a dependency on the crossover operator to maintain performance while the removal of the mutation operator has little effect showing no significant drop in the number of successes. The duplication and swap operators appear to have no significant impact on performance. Productive parents for the blocks problem are of mid to high fitness and this level of fitness is maintained when the various operators are excluded. 
+
+For the more difficult Symbolic Regression problem mutation features exclusively in the final transition from productive parent to perfectly fit child. Removing mutation sees the performance of GA drop to 14.1\%, while removing crossover sees the successes rate fall to less than 1\%. This fall in performance is consistent with results seen in previous research~\cite{oneill}~\cite{oneill2} which identified the importance of one point crossover in maintaining performance. 
+
+Crossover provides more than an explorative search capability, even in later generations it makes a non destructive contribution by effectively utilises the intrinsic polymorphism of GE's codons as changes in one codon ripple through the expression's sub trees. (see Section~\ref{ripple_crossover} for a discussion on ripple crossover). 
+
+ An examination of individuals in the later generations of the Symbolic Regression problem shows considerable bloat with the average individual having a length of 185. The average number of genomes required to solve the problem is 42, so crossover has little effect in the transition from productive parent to the final individual, however, it appears to be essential in maintaining the performance of GA. 
+
+The removal of the swap operator has no significant impact while removal of the duplication operator actually increases the success rate to 41\%. The average fitness of the productive parent remains consistent except for the case where crossover is excluded failing to around half. 
+
+
+\section{Characteristics of Solutions found by Genetic Algorithms}
+
+Table~\ref{ga_results_analysis_table} provides details of the solutions found by the Genetic Algorithm, showing wrapping featuring in 90\% of Santa Fe solutions and 85\% of Blocks solutions, consistent with the high level of wrapping seen in these problem using the previous methodologies. Symbolic Integration and Symbolic Regression only uses wrapping in 1\% of their solutions. In the case of Symbolic Regression this can be predicted to an extent by the average length of a solution, which is 228 of which 42 are expressed. Significantly, the average number of expressed codons for the Blocks problem is longer at 49 than that required for Symbolic Regression (42), suggesting that the difficulty of a problem does not necessarily relate to the number of codons in the solution, contrasting with some of the initial results we saw from Random Search which suggested otherwise.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Feature & Sym Int & Santa Fe & Blocks & Sym Reg  \\
+\hline
+Avg Number of Codons & & & &  \\ 
+in Solution & 23 & 19 & 30 & 228  \\
+Avg Number of expressed & & & &  \\
+Codons in Solution & 13 & 43 & 49 & 42  \\
+Avg Number of Solutions & & & &  \\
+featuring Wrapping & 1\% & 90.8\% & 85\% & 1\%  \\
+\hline
+\end{tabular}
+\caption{\label{ga_results_analysis_table} Analysis of Features from Solutions found by the Genetic Algorithm.}
+\end{center}
+\end{table}
+
+\section{Summary}
+In this chapter we have looked at Genetic Algorithms, the algorithm that has been used in all previously published work on GE. After initial consideration of some of the search strategy options we presented the results of the trials which saw the Symbolic Regression problem solved for the first time with a success rate of 36\%. We next turned our attention to productive parents and examined the impact of selectively removing each of the featured operators. Crossover proved to be essential in maintaining performance in all cases while the removal of mutation significantly affected the Symbolic Regression problem. Duplication and swap proved to have no significant impact on the results. Finally we looked at the characteristics of the solutions found by the Genetic Algorithm and established that problem difficulty is not strictly related to the number of codons required to successfully solve a problem. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

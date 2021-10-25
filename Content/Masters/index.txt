@@ -1,0 +1,137 @@
+chapter1 -------- Introduction to thesis
+chapter2 -------- Overview of Grammatical Evolution, special case of constants
+chapter3 -------- Metaheuristics, Introduction and general overview
+chapter4 -------- Grammatical Evolution and Genetic Algorithms
+chapter5 -------- GE to date performance and charachteristics, this chapter is redundant and should probably go
+chapter6 -------- Inroduction to the studied problem set, why they were chosen, initial problems . more difficult problems
+chapter7 -------- Details of the experiments , configurations used with summary results
+	 
+	 this chapter will follow the format of - 
+	 what can you vary and what is its effects
+	 why you chose the values chosen
+	 final set up for each metaheuristic
+	 The results of the trials 
+	 In this format each metaheuristic could merit a chapter in itself.
+chapter8 -------- discussion on aspects of the results , productive parents , Contribution of operators , performance of random search, neighbourhoods. If I follow the previous format then some of the more detailed discussions featured here would be consumed in the individual meta chapters. Something we could do here is contrast the relative results.
+chapter9 -------- improving GE through primimng, other short commings
+chapter10 -------- Further research
+chapter11 -------- Conclusions
+
+
+Alternative structure:
+chapter 1 ---------- Introduction to Thesis.
+chapter 2 ---------- Overview of GE.
+chapter 3 ---------- General introduction to metaheuristics, local search methods , population based methods , section by section introduction to each of the featured metaheuristics.
+chapter 4 ---------- Studied Problem set
+chapter 5 ---------- Random search experiments, 
+	strategy options
+		fixed parameters
+		variable parameters: none
+			
+	  analysis of results
+	    number of success ,
+	    average genome length ,   
+	    % wrapping in successful solutions
+
+chapter 6 ---------- Hill climbing search experiments,
+	strategy options
+		fixed parameters	
+		  objective function evaluations
+		variable parameters 
+			 zero improvement accept
+			 mutation style , fine versus coarse
+			 initial genome size
+	    effects of variations ,
+	         results for no zia 100
+		 results for zia  100
+		 results for fine mutation 100
+		 results for coarse mutation 100
+		 results showing sensitivity to size 100 each
+		 best settings final results 1000 runs
+	    some analysis of the search trajectory, this should be a sampling of say 8 solutions
+	        number of success ,
+		average genome length ,   
+		% wrapping in successful solutions
+
+chapter 7 ---------- Simulated Annealing search experiments
+	  strategy options
+		fixed parameters	
+		variable parameters 
+			 zero improvement accept (may not be relevant at this point)
+			 initial temperature
+			 temperature decrement
+			 iterations at given temperature
+			 final temperature
+			 mutation style , fine versus coarse
+			 initial genome size
+		 effects of variations ,
+		     results for no zia 100
+		     results for fine mutation 100  { may already have seen the effects of this on HC }
+		     results for coarse mutation 100
+		     results showing sensitivity to size 100 each
+                     results for different initial temperatures
+                     results for different temperatures	change schemes
+                     results for different final temperatures
+                 some analysis of the search trajectory, this should be a sampling of say 8 solutions
+		     number of success ,
+		     average genome length ,   
+		     % wrapping in successful solutions
+
+chapter 8 ---------- GA  search experiments
+	  strategy options
+	  	fixed parameters
+		      pop size
+		      number of generations
+		      selection strategy
+		      crossover style     	
+		variable parameters
+		         impact of operators 
+				mutation
+				crossover
+				duplication
+				swap
+		 effects of variations ,
+                     results for each of the omitted operators
+		 productive parents, how do solutions emerge    
+
+	    number of success ,
+	    average genome length ,   
+	    % wrapping in successful solutions
+
+	
+chapter 9 --------- ES  search experiments
+	  strategy options
+	    continouus versus discrete
+	  	fixed parameters
+		      pop size
+		      number of generations
+		variable parameters
+			      selection strategy , comma versus plus
+			      Recombination type , intermediate versus discrete	
+			      adpative versus fixed mutation
+				       different mutation rates
+	         impact of operators 
+				mutation
+				crossover
+				duplication
+				swap
+		 effects of variations ,
+                     results for each of the omitted operators
+		 productive parents, how do solutions emerge    
+
+	    number of success ,
+	    average genome length ,   
+	    % wrapping in successful solutions
+, variable parameters , chosen settings , effects of variations , final results. Productive parents , adaptive mutation
+chapter 10 --------- EP  search experiments, variable parameters , chosen settings , effects of variations , final results. Productive parents , adaptive mutation , selection strategies , crossover type
+chapter 11 --------- A discussion chapter contrasting results
+chapter 12 Primimg populations
+chapter 13 conclusions and further research
+
+
+
+
+
+
+
+

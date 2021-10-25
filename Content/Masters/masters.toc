@@ -1,0 +1,109 @@
+\contentsline {chapter}{\numberline {1}Introduction to the Thesis}{1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}
+\contentsline {section}{\numberline {1.2}Contributions of the Thesis}{1}
+\contentsline {section}{\numberline {1.3}Organisation of the Thesis}{2}
+\contentsline {section}{\numberline {1.4}Terminology}{3}
+\contentsline {chapter}{\numberline {2}Grammatical Evolution}{4}
+\contentsline {section}{\numberline {2.1}Introduction}{4}
+\contentsline {section}{\numberline {2.2}Grammars}{4}
+\contentsline {subsection}{\numberline {2.2.1}Derivation Trees}{7}
+\contentsline {subsection}{\numberline {2.2.2}Parse Trees}{7}
+\contentsline {section}{\numberline {2.3}A Description of the Method}{7}
+\contentsline {section}{\numberline {2.4}Expressed and Unexpressed Codons}{10}
+\contentsline {section}{\numberline {2.5}Genetic Code Degeneracy and neutral mutation}{13}
+\contentsline {section}{\numberline {2.6}Summary}{13}
+\contentsline {chapter}{\numberline {3}Metaheuristics}{14}
+\contentsline {section}{\numberline {3.1}Introduction}{14}
+\contentsline {section}{\numberline {3.2}Genetic Algorithm}{15}
+\contentsline {subsection}{\numberline {3.2.1}Ripple Crossover}{18}
+\contentsline {section}{\numberline {3.3}Genetic Programming}{19}
+\contentsline {section}{\numberline {3.4}Random Search}{21}
+\contentsline {section}{\numberline {3.5}Simulated Annealing}{22}
+\contentsline {section}{\numberline {3.6}Hill Climbing}{23}
+\contentsline {section}{\numberline {3.7}Evolutionary Programming}{26}
+\contentsline {section}{\numberline {3.8}Evolutionary Strategies}{29}
+\contentsline {subsection}{\numberline {3.8.1}Relationship between EP and ES}{33}
+\contentsline {subsection}{\numberline {3.8.2}Self Adaptive Discrete Optimisation}{34}
+\contentsline {section}{\numberline {3.9}Summary}{35}
+\contentsline {chapter}{\numberline {4}Problem Domains}{36}
+\contentsline {section}{\numberline {4.1}Introduction}{36}
+\contentsline {section}{\numberline {4.2}Santa Fe Trail}{36}
+\contentsline {section}{\numberline {4.3}Symbolic Integration}{38}
+\contentsline {section}{\numberline {4.4}Symbolic Regression}{38}
+\contentsline {section}{\numberline {4.5}Block Stacking}{39}
+\contentsline {section}{\numberline {4.6}Summary}{42}
+\contentsline {chapter}{\numberline {5}Random Search}{43}
+\contentsline {section}{\numberline {5.1}Introduction}{43}
+\contentsline {section}{\numberline {5.2}Search Strategy Options}{43}
+\contentsline {section}{\numberline {5.3}Experimental Conditions}{44}
+\contentsline {section}{\numberline {5.4}Results}{44}
+\contentsline {section}{\numberline {5.5}Characteristics of Solutions found by Random Search}{46}
+\contentsline {section}{\numberline {5.6}Impact of wrapping}{46}
+\contentsline {section}{\numberline {5.7}Summary}{48}
+\contentsline {chapter}{\numberline {6}Hill Climbing}{49}
+\contentsline {section}{\numberline {6.1}Introduction}{49}
+\contentsline {section}{\numberline {6.2}Search Strategy Options}{49}
+\contentsline {section}{\numberline {6.3}Experimental Conditions}{50}
+\contentsline {section}{\numberline {6.4}Results}{50}
+\contentsline {subsection}{\numberline {6.4.1}Impact of Zero Improvement acceptance}{51}
+\contentsline {subsection}{\numberline {6.4.2}Impact of Initial Genome Length}{52}
+\contentsline {subsection}{\numberline {6.4.3}Influence of Operators on Success}{54}
+\contentsline {section}{\numberline {6.5}Characteristics of Solutions found by Hill Climbing}{56}
+\contentsline {subsection}{\numberline {6.5.1}Analysis of search trajectory}{58}
+\contentsline {section}{\numberline {6.6}Problem Difficulty}{58}
+\contentsline {section}{\numberline {6.7}Summary}{59}
+\contentsline {chapter}{\numberline {7}Simulated Annealing}{61}
+\contentsline {section}{\numberline {7.1}Introduction}{61}
+\contentsline {section}{\numberline {7.2}Search Strategy Options}{61}
+\contentsline {section}{\numberline {7.3}Experimental Conditions}{62}
+\contentsline {section}{\numberline {7.4}Establishing an Annealing Schedule}{62}
+\contentsline {section}{\numberline {7.5}Results}{65}
+\contentsline {section}{\numberline {7.6}Characteristics of Solutions found by Simulated Annealing}{67}
+\contentsline {subsection}{\numberline {7.6.1}Analysis of search trajectory}{68}
+\contentsline {section}{\numberline {7.7}Summary}{69}
+\contentsline {chapter}{\numberline {8}Genetic Algorithms}{70}
+\contentsline {section}{\numberline {8.1}Introduction}{70}
+\contentsline {section}{\numberline {8.2}Search Strategy Options}{70}
+\contentsline {section}{\numberline {8.3}Experimental Conditions}{71}
+\contentsline {section}{\numberline {8.4}Results}{72}
+\contentsline {section}{\numberline {8.5}Productive Parents in GA}{72}
+\contentsline {section}{\numberline {8.6}Characteristics of Solutions found by Genetic Algorithms}{75}
+\contentsline {section}{\numberline {8.7}Summary}{76}
+\contentsline {chapter}{\numberline {9}Evolutionary Strategies}{78}
+\contentsline {section}{\numberline {9.1}Introduction}{78}
+\contentsline {section}{\numberline {9.2}Search Strategy Options}{79}
+\contentsline {section}{\numberline {9.3}Experimental Conditions}{79}
+\contentsline {section}{\numberline {9.4}Evolutionary Strategies Selection Methods}{80}
+\contentsline {section}{\numberline {9.5}Impact of Mutation Rate on Success}{81}
+\contentsline {section}{\numberline {9.6}Results}{82}
+\contentsline {section}{\numberline {9.7}Characteristics of Solutions found by Evolutionary Strategies}{83}
+\contentsline {section}{\numberline {9.8}Summary}{84}
+\contentsline {chapter}{\numberline {10}Evolutionary Programming}{85}
+\contentsline {section}{\numberline {10.1}Introduction}{85}
+\contentsline {section}{\numberline {10.2}Search Strategy Options}{86}
+\contentsline {section}{\numberline {10.3}Experimental Conditions}{86}
+\contentsline {section}{\numberline {10.4}Impact of Strategy Variables}{86}
+\contentsline {section}{\numberline {10.5}Results}{87}
+\contentsline {section}{\numberline {10.6}Characteristics of Solutions found by Evolutionary Programming}{88}
+\contentsline {section}{\numberline {10.7}Summary}{90}
+\contentsline {chapter}{\numberline {11}Comparison of Methods}{91}
+\contentsline {section}{\numberline {11.1}Introduction}{91}
+\contentsline {section}{\numberline {11.2}Comparing the results}{92}
+\contentsline {section}{\numberline {11.3}Characteristics of the Search Space}{92}
+\contentsline {subsection}{\numberline {11.3.1}Santa Fe Trail}{93}
+\contentsline {subsection}{\numberline {11.3.2}Symbolic Integration}{96}
+\contentsline {subsection}{\numberline {11.3.3}Blocks}{96}
+\contentsline {subsection}{\numberline {11.3.4}Symbolic Regression}{99}
+\contentsline {section}{\numberline {11.4}Analysis of Solution Lengths}{99}
+\contentsline {section}{\numberline {11.5}Comparing ES, EP and GA}{100}
+\contentsline {section}{\numberline {11.6}Fixed and Variable length Gemones on EP and GA}{101}
+\contentsline {section}{\numberline {11.7}Experimental Conditions}{102}
+\contentsline {section}{\numberline {11.8}Wrapping}{103}
+\contentsline {subsection}{\numberline {11.8.1}Grammars and Wrapping}{105}
+\contentsline {subsection}{\numberline {11.8.2}Impact of Conditionals on Wrapping}{106}
+\contentsline {section}{\numberline {11.9}Summary}{109}
+\contentsline {chapter}{\numberline {12}Conclusions and Further Research}{111}
+\contentsline {section}{\numberline {12.1}Summary}{111}
+\contentsline {section}{\numberline {12.2}Conclusions}{112}
+\contentsline {section}{\numberline {12.3}Future Directions}{115}
+\contentsline {chapter}{Appendix A}{117}

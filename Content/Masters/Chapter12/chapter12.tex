@@ -1,0 +1,56 @@
+\chapter{Conclusions and Further Research}
+\section{Summary}
+The primary goal of this thesis was to evaluate and understand the performance and behavior of Grammatical Evolution (GE) by using a number of different search methodologies. In the course of this research, six different metaheuristics were evaluated Genetic Algorithms (GA), Evolutionary Strategies (ES), Evolutionary Programming (EP), Random Search (RS), Hill Climbing (HC) and Simulated Annealing (SA). These evaluations were conducted on four benchmark GP problems, Symbolic Integration, Santa Fe Trail, Blocks and  Symbolic Regression.
+
+Chapter two introduced the mechanics of GE and explained much of the associated terminology giving particular emphasis to concepts associated with language grammars. Concepts like  genetic code degeneracy, neutral mutation, and expressed and un-expressed genes, which are referenced throughout the text, were introduced. 
+
+In chapter three we introduced the chosen metaheuristics, HC, SA, GA, RS, GA, ES and EP, presenting each with a discussion on the origin of the method, the key strategy choices, operators and a detailed step by step guide to the algorithms involved. 
+
+The problem domains were introduced in chapter four with an explanation of the objective of the problems and a presentation in Backaus Naur Form of each of the grammars used to attempt to solve the problems.
+
+Each of the six chapters from five through to ten focused on a particular metaheuristic. A similar pattern was used for each looking first at the search strategy options, then considering the parameters used to configure the algorithms, presentation of the results and some discussion on aspects of the metaheuristic that could be refined or tuned to improve the success rate.
+
+
+In chapter eleven we looked comparatively at the results, contrasting the performance of the different metaheuristics on each of the problems, looking at the nature of the search space encountered by the search strategies and looking at characteristics of the successful solutions found. The latter part of this chapter focused on more detailed analysis of some of the more successful metaheuristics GA, ES and EP. Finally, we looked at the wrapping and tried to understand aspects of the problems and their grammars that might contribute to it prominence in some results  and its absence in others.
+
+
+\section{Conclusions}
+The relationship between problems, grammars and GE is a complex one. While this research has shown that many different search strategies can be used successfully with GE, it is difficult to extract universal learnings that guarantee improvements across all classes of problems. We can, however, say that population based methods have a distinct advantage as evidenced from the performance of EP, ES and GA. These metaheuristics clearly outperformed the local search based approaches of HC and SA. Indeed, any attempts to try and improve the performance of HC and SA through variation in the search strategy options for these methods yielded little improvement.
+While the performance of the local search approaches was disappointing, the performance of RS was surprisingly strong, significantly out performing HC and SA on the three problems that it managed to solve.  
+
+GA was the best search strategy to solve the Symbolic Regression problem, successfully solving it in 36\% of attempts. EP and ES also solved this problem at lower success rates. Overall, GA was more successful on the chosen problems, with little to differentiate the performances of the EP and ES.
+
+We analaysed the contribution of the various GA operators in an effort to understand some of the factors that contributed toward its success and found that crossover was key to the performance of the algorithm with the removal of mutation, duplication and swap having lower levels of influence on success rates. A significant difference in the emergence of successful solutions in GA as opposed to HC and SA, was the fact that GA solutions typically emerged from mid to high fitness parents while successful solutions from the local search approach emerged from areas of low fitness. 
+
+While operator by operator analysis revealed that the contribution of crossover was seen as key to the performance of GA, a comparative analysis of GA and EP revealed that the performance of GA without crossover can be significantly boosted by the introduction of fixed length genomes. It is also significant that the form of intermediate recombination favoured by ES in our trials is potentially much more disruptive an operator than the one-point crossover used by GA. This, coupled with the fact that EP used no recombination at all, would tend to suggest that to some degree all of the operators in isolation are dispensable to some degree, the key to success being the global search approach offered by the population based nature of these methods. 
+
+ES had similar levels of performance to GA, with Symbolic Regression being the only problem in which we saw any significant difference. Intermediate recombination and a \emph{plus} selection strategy was clearly the most successful form of ES and an analysis of successful solutions from ES showed no wrapping being used in any of the successful solutions.
+
+EP introduced a second strategy variable that controlled where in the genome string the mutation would occur, however, this proved counter productive and best results were achieved with the standard form of adaptive mutation that we had used previously in ES. Despite the absence of a recombination operator, which had proved essential in maintaining GA performance, results for EP were not significantly worse that those of GA and ES. One of the most curious features of the EP results was the re-emergence of wrapping in the Santa Fe and Blocks problems despite the fact that the length of genome presented to the search strategies was longer than the number of codons required for a successful solution. 
+
+
+Our attempts to profile the problem search spaces and our evidence from the various search strategies used suggest complex, noisy, discontinuous multimodal landscapes. These landscapes prove difficult for the deterministic gradient following approaches of HC and SA, while the global approach of GA, EP and ES cope significantly better. With the exception of the Blocks problem, we saw solutions to our selected problems exist as sharp isolated peaks of maximum fitness, and further evidence from our use of RS to sample the search space suggest that some of the problems have a high density of such peaks. 
+
+
+
+One of the most significant things to emerge from this research was the recognition of GE's ability to work successfully and seamlessly with a broad range of different search approaches. This establishes it as a powerful and flexible mechanism for the automatic generation of grammar based code and programs. 
+
+\section{Future Directions}
+An area requiring a more complete analysis is the relationship between grammars and wrapping. In this research we have tried to understand some of the factors that influence wrapping. The relationship between the various factors that contribute to its emergence in certain problems is complex. We saw in two of the problems, Santa Fe and Blocks, a tendency toward solutions that are considerably longer than the minimum number of codons required. This is facilitated primarily by nesting of conditionals and by sequences of redundant code. We did establish that wrapping is not purely related to the required number of codons in a given solution. This was evident when we tried to force Symbolic Integration to use wrapping by presenting it with short genome lengths only to see it fail at every attempt, unable to complete a solution through wrapping.
+
+We have attempted to shed some light on some of the factors that contribute toward the emergence of wrapping, however we believe that the most fruitful area for further research into  this behaviour lies in the selection and construction of specific problem grammars that use constructs like conditionals and repetition. Additionally the design of the grammar is proving increasingly important with evidence that layout and sequencing are strongly influencing linkage within the grammar effecting production selection bias.   
+
+The performance of RS on at least three of the problems brings into question their suitability as bench mark problems. While the population based methods have proved more successful on these particular problems there is no guarantee that these results will hold true for more complex problems. Future studies in both GE and GP would be better served by moving away from these particular problems.  
+
+While much work was done in the optimisation and in various search strategy options were introduced in this for the three most successful population based methods much work remains in the analysis and optimisation of these methods. Approaches like EP and ES offer the opportunity of strategy variables evolving with the emerging solutions, as our knowledge of the inner workings of GE continues to grow these strategy variables could be used to exploit this knowledge by engineering the search in a particular direction, some modest attempts at this have already been attempted in this research. The analysis of a population based approach to SA and HC would also be an interesting avenue of investigation given their dependence on a good starting point and the proven success of population based algorithms.
+
+
+
+
+
+
+
+
+
+
+

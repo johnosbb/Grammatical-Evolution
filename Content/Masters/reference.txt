@@ -1,0 +1,39 @@
+Koza, John R., Banzhaf, Wolfgang, Chellapilla, Kumar, Deb, Kalyanmoym Dorigo, Marco, Fogel, David B., Garzon, Max H., Goldberg, David E., Iba, Hitoshi, and Riolo, Rick L. (editors). Genetic Programming 1998: Proceedings of the Third Annual Conference, July 22-25, 1998, University of Wisconsin, Madison, Wisconsin. San Francisco, CA: Morgan Kaufmann. 
+Why Ants are Hard 193
+W. B. Langdon and R. Poli
+----------------------------------
+James A. Foster, Evelyne Lutton, Julian F. Miller, Conor Ryan, Andrea Tettamanzi (Eds.): Genetic Programming, 5th European Conference, EuroGP 2002, Kinsale, Ireland, April 3-5, 2002, Proceedings. Lecture Notes in Computer Science 2278 Springer 2002, ISBN 3-540-43378-3 
+Maarten Keijzer, Michael O'Neill, Conor Ryan, Mike Cattolico: 
+Grammatical Evolution Rules: The Mod and the Bucket Rule. 123-130
+-----------------------------------
+
+Peter J. Angeline, Robert G. Reynolds, John R. McDonnell, Russell C. Eberhart (Eds.): Evolutionary Programming VI, 6th International Conference, EP97, Indianapolis, Indiana, USA, April 13-16, 1997, Proceedings. Lecture Notes in Computer Science 1213 Springer 1997, ISBN 3-540-62788-X 
+Kumar Chellapilla, David B. Fogel: Exploring Self-Adaptive Methods to Improve the Efficiency of Generating Approximate Solutions to Travelling Salesman Problems Using Evolutionary Programming. 361-372 
+-----------------------------------------
+GECCO-99: Proceedings of the Genetic and Evolutionary Computation Conference, July 13-17, 1999, Orlando, Florida USA  
+Publication type:  Proceedings  
+Conference title:  GECCO - Genetic and Evolutionary Computation Conference  
+Editors:  W Banzhaf, J Daida, A Eiben, M Garzon, V Honavar, M Jakiela, R Smith  
+Publisher:  Morgan Kaufmann Publishers  
+Publication date:  1999  
+Language:  English  
+ISBN:  1558606114 2 volumes  
+Links:  View Amazon.com web page
+ 
+Subject categories:  [1.01] Evolutionary computing - general  
+Posted: 16 Mar 01  
+W. B. Langdon, "Size fair and homologous tree genetic programming crossovers," Genetic programming and evolvable machines, vol. 1, no. 1/2, pp. 95--119, April 2000.
+W. B. Langdon. Size fair and homologous tree genetic programming 
+crossovers. In W. Banzhaf, J. Daida, A. E. Eiben, M. H. Garzon, V. Honavar, M. Jakiela, and R. E. Smith, editors, Proceedings of the Genetic and Evolutionary Computation Conference, volume 2, pages 1092-1097, Orlando, Florida, USA, Morgan Kaufmann: San Francisco, 13-17 July 1999.
+-------------------------------------
+Genetic Programming: Proceedings of the European Conference, EuroGP 2000, Edinburgh, Scotland, UK, April 2000
+Editors:  W Banzhaf, T Fogarty, W Langdon, J Miller, P Nordin, R Poli  
+149-162
+Crossover in Grammatical Evolution: A Smooth Operator? .
+---------------------------------------------
+Second European Workshop, EuroGP'99, Göteborg, Sweden, May 26-27, 1999, Proceedings 
+Evolving Multi-line Compilable C Programs ..............................83
+
+Poli, R., University of Birmingham, UK; Nordin, P., Chalmers University of Technology, Göteborg, Sweden; Langdon, W. B., Amsterdam, The Netherlands; Fogarty, T. C., Napier University, Edinburgh, UK (Eds.) 
+--------------------------------------
+----------------------------------------------

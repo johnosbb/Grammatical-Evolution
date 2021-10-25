@@ -1,0 +1,12 @@
+\begin{verbatim}
+N = {expr,op}
+T = {+,-,/,*,X,(,)}
+S = <expr>
+P is a set of rules:
+<expr>     :: == <var> | <expr><op><expr> | <pre-op>(<expr>)
+                 | (<expr>) 
+<var>      :: == X  	                                           
+<op>       :: == + | - | * | /                            
+<pre-op>   :: == sin | cos | tan | log        
+
+\end{verbatim}

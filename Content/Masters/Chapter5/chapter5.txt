@@ -1,0 +1,187 @@
+# Random Search
+
+## Introduction
+
+This chapter focuses on the performance and characteristics of Random
+Search. The experimental conditions are first presented before detailing
+the results with some discussion on aspects of the solutions found. The
+degree to which wrapping occurs in the successful trials is examined and
+the impact on the success rate of its removal is also looked at.
+
+One of the key objectives of this chapter is to provide some insight
+into the relative difficulty of the selected problems. This is based on
+the assumption that Random Search as a method of sampling the search
+space provides some indication of the solution density associated with a
+particular problem.
+
+## Search Strategy Options
+
+For Random Search, individuals of random length and random value are
+created and evaluated. The size of the sample is fixed at 25000, which
+is the number of evaluations of the objective function that have been
+allowed per trial to each of the search methods evaluated in this
+research.
+
+## Experimental Conditions
+
+Table [1.1](#rs_param_table){reference-type="ref"
+reference="rs_param_table"} shows the parameters used to configure
+Random Search for the trials. For Symbolic Integration, Santa Fe Trail
+and Blocks a maximum genome length of 100 was used, while Symbolic
+Regression used a figure of 200. The selected values for maximum length
+were influenced by a consideration of the grammar used and the likely
+nature of the target expression for each of the problems.
+
+::: center
+::: {#rs_param_table}
+  Parameter               Problems                       
+  ----------------------- ---------- ---------- -------- ---------
+                          Sym Int    Santa Fe   Blocks   Sym Reg
+  Number of Trials        1000       1000       1000     1000
+  Number of Objective                                    
+  Function Evaluations    25000      25000      25000    25000
+  Initial Genome Length   100        100        100      200
+  Initial Genome Length                                  
+  Variation Range         10%        10%        10%      10%
+  Wrapping                on         on         on       on
+
+  : [\[rs_param_table\]]{#rs_param_table label="rs_param_table"}
+  Parameters used to configure Random Search.
+:::
+:::
+
+## Results
+
+The results of the trials are shown in
+Table [1.2](#rs_results_table){reference-type="ref"
+reference="rs_results_table"}. Symbolic Integration proves to be the
+easiest problem to solve with a success rate of 40%. The Santa Fe Trail
+also scores a high level of success with a figure of 30% while Blocks is
+solved in 24% of the attempts. Symbolic Regression was not solved in any
+of the trials.
+
+::: center
+::: {#rs_results_table}
+  Problem                Successful Runs
+  ---------------------- -----------------
+  Symbolic Integration   40%
+  Santa Fe Trail         30%
+  Blocks                 24%
+  Symbolic Regression    0%
+
+  : [\[rs_results_table\]]{#rs_results_table label="rs_results_table"}
+  Results from Trials of Random Search.
+:::
+:::
+
+A significant aspect of these results is the insight they provide into
+the relative difficulty of the problems. The success rates for Symbolic
+Integration, Santa Fe and Blocks would suggest a high density of
+solutions within the search space for these problems.
+
+A more detailed examination of Random Search in the case of Symbolic
+Integration and the Santa Fe Trail indicates that there is no revisiting
+of previously encountered individuals, that is each of the 25000 samples
+are unique. This lack of duplication is maintained even when one reduces
+the maximum permitted value of the codon to the minimum possible, that
+is the number of productions in the grammar (i.e. removal of Genetic
+Code Degeneracy see
+Section [\[degeneracy\]](#degeneracy){reference-type="ref"
+reference="degeneracy"}). For example fixing the maximum codon value to
+2 in the case of Santa Fe and 3 in the case of Symbolic Integration.
+
+Another emerging feature from these results is the correlation between
+average number of expressed codons in a solution and success rates.
+Symbolic Integration proves to be the easiest of the problems to solve,
+requiring on average just 14 codons (see
+Table [1.3](#rs_results_analysis_table){reference-type="ref"
+reference="rs_results_analysis_table"}) while Santa Fe and Blocks
+require on average 46 and 69 codons respectively.
+
+## Characteristics of Solutions found by Random Search
+
+Table [1.3](#rs_results_analysis_table){reference-type="ref"
+reference="rs_results_analysis_table"} shows some of the characteristics
+of the solutions found by Random Search. Symbolic Integration requires
+on average only 14 codons, while Santa Fe and Blocks require 46 and 69
+respectively. Wrapping occurs in 43% of Santa Fe solutions and 41% of
+Blocks solutions while none of the Symbolic Integration solutions use
+wrapping. Wrapping on the Blocks problem often results in multiple wrap
+events on the same genome, averaging two wrap events per succesful
+solution. Santa Fe averages just one wrap event for successfull
+solutions.
+
+::: center
+::: {#rs_results_analysis_table}
+  Feature                   Sym Int   Santa Fe   Blocks   Sym Reg
+  ------------------------- --------- ---------- -------- ---------
+  Avg Number of Codons                                    
+  in Solution               57        57         58       n/a
+  Avg Number of expressed                                 
+  Codons in Solution        14        46         69       n/a
+  Percentage of Solutions                                 
+  featuring Wrapping        0%        43%        41%      n/a
+
+  : [\[rs_results_analysis_table\]]{#rs_results_analysis_table
+  label="rs_results_analysis_table"} Analysis of Characteristics from
+  Solutions found by Random Search.
+:::
+:::
+
+## Impact of wrapping
+
+Wrapping appears prominently in the Santa Fe and Blocks problems with
+43% of the Santa Fe solutions and 41% of Blocks solutions featuring
+wrapping.
+
+Symbolic Integration doesn't use wrapping in any of the solutions found
+by Random Search. An examination of the average number of expressed
+codons used in solutions to the Symbolic Integration problem shows it to
+be quite short, at 14, which contrasts with the figure of 57 for the
+average number of codons used in a successful genome. This ratio of
+actual codons provided to actual codons required is greatest for
+Symbolic Integration. Comparing this same ratio for Santa Fe and Blocks
+reveals that although both problems use wrapping at similar levels
+(41% - 43%) the ratio for Blocks is actually less than one indicating a
+much higher number of wrap events. An analysis of the Blocks solutions
+supports this, revealing up to four wrap events within a single solution
+on occasion.
+
+Column 2 of Table [1.4](#rs_no_wrap_results_table){reference-type="ref"
+reference="rs_no_wrap_results_table"} shows the impact on success rates
+of removing wrapping. Symbolic Integration which showed no dependency on
+wrapping remains unchanged while Santa Fe and Blocks drop by 15% and 7%
+respectively.
+
+::: center
+::: {#rs_no_wrap_results_table}
+  ---------------- ------------ -------------- ------------ -------------
+  Problem          Successful   Change in      Avg Number   Avg Number
+                   Runs         Success Rate   of Codons    Codons Used
+  Symbolic Int.    41%          +1%            53           15
+  Santa Fe Trail   15%          -15%           63           37
+  Blocks           17%          -7%            65           39
+  Symbolic Reg.    0%           n/a            n/a          n/a
+  ---------------- ------------ -------------- ------------ -------------
+
+  : [\[rs_no_wrap_results_table\]]{#rs_no_wrap_results_table
+  label="rs_no_wrap_results_table"} Results from 1000 trials of Random
+  Search with Wrapping disabled on the problem set.
+:::
+:::
+
+## Summary
+
+In this chapter we have looked at the efforts of Random Search in
+solving the problem set. Symbolic Integration, Santa Fe Trail and Blocks
+were solved with surprisingly high success rates, while all trials on
+Symbolic Regression and Spirals were unsuccessful. Wrapping featured
+prominently in the results for Santa Fe and Blocks, removing wrapping
+sees a drop in the success rate for these two problems. If we regard
+Random Search as a means of providing insight into the density of
+solutions in the search space then we can conclude that Symbolic
+Integration requiring an average of 14 codons has the highest density of
+solutions making it the easiest of the selected problems. Santa Fe and
+Blocks also show high solution densities requiring an average of 46 and
+69 codons respectively. The results suggest that Symbolic Regression is
+a much more difficult problem, remaining unsolved by random search.

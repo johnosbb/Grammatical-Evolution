@@ -1,0 +1,181 @@
+# Evolutionary Programming
+
+## Introduction
+
+Evolutionary Programming is the last of the selected metaheuristics to
+be evaluated in these trials. Although similar in many respects to
+Evolutionary Strategies it evolved independently from the work of Fogel,
+Owens and Walsh in the 1960s. The main difference between the two
+approaches is Evolutionary Strategies' absence of a recombination
+operator and its use of a tournament based selection method where an
+individuals probability of selection is based the number of wins
+achieved against 10 randomly selected opponents [@back]. Like
+Evolutionary Strategies it uses a fixed length representation.
+
+We look first at the search strategy options and the experimental set-up
+used in the trials. Some initial runs are performed to assess the impact
+of the selected strategy variables before the final results are
+presented. The chapter concludes by looking at some of the
+characteristics of solutions found by Evolutionary Programming.
+
+## Search Strategy Options
+
+A population size of 50 individuals evolving over 500 generations
+provides the 25000 evaluations of the objective function used in
+previous trials. The genome length is fixed at 100 for Symbolic
+Integration, Santa Fe and Blocks, while a longer length of 200 was used
+for Symbolic Regression.
+
+The key strategy choice for this method revolves around the selection of
+suitable strategy variables (see
+Section [\[strategy_variables\]](#strategy_variables){reference-type="ref"
+reference="strategy_variables"}). Two have been chosen for these trials,
+*mutation rate*, which determines the probability of a codon being
+mutated, and *mutation bias* which determines where in the genome the
+mutation can take place.
+
+## Experimental Conditions
+
+Table [1.1](#ep_param_table){reference-type="ref"
+reference="ep_param_table"} shows the main parameters used to configure
+Evolutionary Programming. The initial mutation rate has been set at 12%
+based on the results from this parameter value in the Evolutionary
+Streategies trials. The *mutation rate range* value is set at 25%
+(Section [\[es_options\]](#es_options){reference-type="ref"
+reference="es_options"} provides more detail on these parameters).
+
+::: center
+::: {#ep_param_table}
+  Parameter               Problems                       
+  ----------------------- ---------- ---------- -------- ---------
+                          Sym Int    Santa Fe   Blocks   Sym Reg
+  Number of Trials        1000       1000       1000     1000
+  Number of Objective                                    
+  Function Evaluations    25000      25000      25000    25000
+  Fixed Genome Length     100        100        100      200
+  Population Size         50         50         50       50
+  Number of Generations   500        500        500      500
+  Initial Mutation Rate   12%        12%        12%      12%
+  Mutation Range          25%        25%        25%      25%
+
+  : [\[ep_param_table\]]{#ep_param_table label="ep_param_table"}
+  Parameters used to Configure Evolutionary Programming.
+:::
+:::
+
+## Impact of Strategy Variables
+
+A number of preliminary runs were performed to evaluate the impact of
+the selected strategy variables. The first set uses mutation with no
+positional bias, that is the mutation can fall anywhere within the
+entire genome length. The second set uses a strategy variable that
+limits the mutation of codons to a certain point in the genome. It is
+expressed as a percentage, where for example 0% means that mutation can
+take place anywhere in the gemone, 50% means that mutation is limited to
+the second half of the genome and 100% effectively stops any mutation
+from taking place.
+
+The results show in Table [1.2](#ep_strategies){reference-type="ref"
+reference="ep_strategies"} shows a significant performance benefit for
+Symbolic Integration, Santafe, Blocks and Symbolic Regression when
+mutation without bias is used.
+
+::: center
+::: {#ep_strategies}
+                         Strategy Variables   
+  ---------------------- -------------------- -----------
+  Problem                Mutation             Mutation
+                         without Bias         with Bias
+  Symbolic Integration   94%                  42%
+  Santa Fe Trail         73%                  21%
+  Blocks                 95%                  64%
+  Symbolic Regression    25%                  11%
+
+  : [\[ep_strategies\]]{#ep_strategies label="ep_strategies"} Analysis
+  of EP Strategy Variables showing Success Rates with and without
+  Mutation Bias
+:::
+:::
+
+## Results
+
+Table [1.3](#ep_results_table){reference-type="ref"
+reference="ep_results_table"} summarises the overall results for
+Evolutionary Programming. These final trials use mutation without
+positional bias, a mutation rate of 12 and a mutation range of 25.
+Symbolic Regression is solved with the same success rate of Evolutionary
+Strategies (25%). Santa Fe is the one problem which sees Evolutionary
+Programming (73%) outperform Evolutionary Strategies (63%). Scores for
+the Blocks problem showing no significant difference at around 95%.
+There is also no significant difference in performance for the Symbolic
+Integration problem with Evolutionary Strategies scoring 95% and
+Evolutionary Programming scoring 94%.
+
+::: center
+::: {#ep_results_table}
+  Problem                Successful Runs
+  ---------------------- -----------------
+  Symbolic Integration   94%
+  Santa Fe Trail         73%
+  Blocks                 95%
+  Symbolic Regression    25%
+
+  :  [\[ep_results_table\]]{#ep_results_table label="ep_results_table"}
+  Results from Evolutionary Programming Trials.
+:::
+:::
+
+## Characteristics of Solutions found by Evolutionary Programming
+
+Table [1.4](#ep_results_analysis_table){reference-type="ref"
+reference="ep_results_analysis_table"} provides details of the solutions
+found by Evolutionary Programming A surprising aspect of these results
+is the emergence of wrapping in some of the solutions. This is curious
+when one considers that fixed length genome of length 100 are being used
+in the case of Santa Fe and Blocks. This length is much longer than the
+number of codons required to solve the respective problems, however
+Evolutionary Programming still manages to employ wrapping by finding
+solutions whose number of expressed codons are in excess of 100. This is
+contrast to the situation with Evolutionary Strategies in the last
+chapter which also employed fixed length genomes of similar lengths, yet
+no wrapping was used in any of the solutions found by that method.
+
+One contributing factor towards the re-emergence of wrapping is that the
+solutions found by Evolutionary Programming tend to have larger numbers
+of expressed codons than any of the previous metaheuristics. Santa Fe,
+for example, uses on average 74 expressed codons as against an average
+of 46 for all of the previous metaheuristics. An examination of
+successful solutions shows very high levels of nesting of conditionals
+in the Santa Fe and Blocks problems. Perhaps the lack of a recombination
+operator forces Evolutionary Programming toward longer genome lengths in
+a search for successful solutions.
+
+::: center
+::: {#ep_results_analysis_table}
+  Feature                   Sym Int   Santa Fe   Blocks   Sym Reg
+  ------------------------- --------- ---------- -------- ---------
+  Avg Number of Codons                                    
+  in Solution               100       100        100      200
+  Avg Number of expressed                                 
+  Codons in Solution        19        74         48       57
+  Percentage of Solutions                                 
+  using Wrapping            0%        2.79%      46%      1%
+
+  : [\[ep_results_analysis_table\]]{#ep_results_analysis_table
+  label="ep_results_analysis_table"} Analysis of Features from Solutions
+  found by Evolutionary Programming.
+:::
+:::
+
+## Summary
+
+This chapter looked at the last of our selected metaheuristics,
+Evolutionary Programming. Despite the absence of a recombination
+operator, the algorithm successfully solved all four problems. Success
+rates across all of the problems are not significantly different than
+the scores achieved by Evolutionary Strategies.
+
+A significant aspect of Evolutionary Programming solutions was their
+length, with the number of expressed codons exceeding those of the other
+metaheuristics, causing two of the problems to employ wrapping even when
+fixed length genomes of 100 codons were used.

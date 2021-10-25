@@ -1,0 +1,12 @@
+```{=tex}
+\relax
+```
+\@setckpt{TitlePage/toc}{ `\setcounter{page}{1}`{=tex}
+`\setcounter{equation}{0}`{=tex} `\setcounter{enumi}{0}`{=tex}
+`\setcounter{enumii}{0}`{=tex} `\setcounter{enumiii}{0}`{=tex}
+`\setcounter{enumiv}{0}`{=tex} `\setcounter{footnote}{0}`{=tex}
+`\setcounter{mpfootnote}{0}`{=tex} `\setcounter{part}{0}`{=tex}
+`\setcounter{chapter}{0}`{=tex} `\setcounter{section}{0}`{=tex}
+`\setcounter{subsection}{0}`{=tex} `\setcounter{subsubsection}{0}`{=tex}
+`\setcounter{paragraph}{0}`{=tex} `\setcounter{subparagraph}{0}`{=tex}
+`\setcounter{figure}{0}`{=tex} `\setcounter{table}{0}`{=tex} }
