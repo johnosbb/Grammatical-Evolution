@@ -164,7 +164,7 @@ reference="parse_tree"}.
 
  
 
-## A Description of the Method {#modulo}
+## A Description of the Method 
 
 Grammatical Evolution (GE) [@ieee2001] [@ge_book] is an evolutionary
 algorithm that can evolve complete programs in an arbitrary language
@@ -203,7 +203,9 @@ influence the future direction of the search strategy. The following
 example illustrates the process of GE for the following simple
 expression:
 
-$$f(x) = sin(x) + x^2 + x$$
+```
+    f(x) = sin(x) + x^2 + x
+```
 
 A grammar, which can be used to derive this simple expression, is shown
 below.
@@ -226,6 +228,7 @@ occurs once the search engine has presented a codon to GE.
 
 ::: center
 ::: {#simple_grammar_table}
+        ```
   Non-Terminals                Productions                                            
   --------------- ------------ ------------- -------------------- ------------------- ------------
                                0             1                    2                   3
@@ -233,7 +236,7 @@ occurs once the search engine has presented a codon to GE.
   2\.             `<var>`      X                                                      
   3\.             `<op>`       \+            \-                   \*                  /
   4\.             `<pre-op>`   sin           cos                  tan                 log
-
+```
   : [\[simple_grammar_table\]]{#simple_grammar_table
   label="simple_grammar_table"}Simple grammar presented in table form.
 :::
@@ -260,6 +263,7 @@ trials reported in later sections.
 
 ::: center
 ::: {#bf_grammar_table1}
+        ```
   Step   Expression
   ------ ------------------------------------------------------
   0      $<expr>$
@@ -281,7 +285,7 @@ trials reported in later sections.
          129 mod 4 = 1, Production 1 from row 1 was chosen.
   8      $(( X ) * \mathbf{<expr>} <op> <expr> <op> <expr> )$
          53 mod 4 = 1, Production 1 from row 1 was chosen.
-
+```
   : [\[bf_grammar_table1\]]{#bf_grammar_table1
   label="bf_grammar_table1"}Analysis of Depth First Mapping.
 :::
