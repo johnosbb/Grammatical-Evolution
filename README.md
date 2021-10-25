@@ -211,13 +211,14 @@ below.
 [\[sect:simple_grammar_bnf\]]{#sect:simple_grammar_bnf
 label="sect:simple_grammar_bnf"}
 
-
+```
     <expr>   :: == <var> | <expr><op><expr> | <pre-op>(<expr>)
                          | (<expr>) 
     <var>    :: == X                                               
     <op>     :: == + | - | * | /                            
     <pre-op> :: == sin | cos | tan | log        
-
+```
+        
 We present this grammar in tabular form in
 Figure [1.1](#simple_grammar_table){reference-type="ref"
 reference="simple_grammar_table"} and show the mapping process that
