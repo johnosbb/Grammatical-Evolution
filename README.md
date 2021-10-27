@@ -13,6 +13,7 @@ This research demonstrates GE's ability to work successfully and seamlessly with
 
 ## Other Publications
 - [An Investigation into the Use of Different Search Strategies with Grammatical Evolution - John O’Sullivan and Conor Ryan](https://link.springer.com/chapter/10.1007/3-540-45984-7_26)
+- ![Publications](https://github.com/johnosbb/Grammatical-Evolution/blob/main/gp.png)
 
 ## Links
 - [GA in Python](https://towardsdatascience.com/introducing-geneal-a-genetic-algorithm-python-library-db69abfc212c)
