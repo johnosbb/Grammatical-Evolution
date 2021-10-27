@@ -10,3 +10,10 @@ This research demonstrates GE's ability to work successfully and seamlessly with
 
 
 [Masters Thesis in full is available here](https://github.com/johnosbb/Grammatical-Evolution/blob/main/Masters_2021.pdf)
+
+## Other Publications
+- [An Investigation into the Use of Different Search Strategies with Grammatical Evolution](https://link.springer.com/chapter/10.1007/3-540-45984-7_26)
+
+## Links
+- [GA in Python](https://towardsdatascience.com/introducing-geneal-a-genetic-algorithm-python-library-db69abfc212c)
+- 
