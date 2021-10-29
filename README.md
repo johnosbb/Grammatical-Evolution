@@ -1,5 +1,5 @@
 # Grammatical-Evolution
-![Publications](https://github.com/johnosbb/Grammatical-Evolution/blob/main/gp.png?raw=true)
+![Publications](https://github.com/johnosbb/Grammatical-Evolution/blob/main/ga.png?raw=true)
 
 [Grammatical Evolution](https://en.wikipedia.org/wiki/Grammatical_evolution) (GE) is an [Evolutionary Algorithm](https://en.wikipedia.org/wiki/Evolutionary_algorithm#:~:text=In%20computational%20intelligence%20(CI)%2C,mutation%2C%20recombination%2C%20and%20selection.) (EA) that can generate programs in an abritrary language. GE employs a genotype-phenotype mapping process which uses variable length binary strings to select productions from a [Backus Naur Form Grammar](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form). To-date GE has used a [Genetic Algorithm](https://en.wikipedia.org/wiki/Genetic_algorithm) as the means of directing the search, however, its ability to separate the search space and solution space makes it suitable for use with a variety of search mechanisms.
 
