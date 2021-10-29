@@ -13,7 +13,8 @@ This research demonstrates GE's ability to work successfully and seamlessly with
 [Masters Thesis in full is available here](https://github.com/johnosbb/Grammatical-Evolution/blob/main/Masters_2021.pdf)
 
 ## Other Publications
-- [An Investigation into the Use of Different Search Strategies with Grammatical Evolution - John O’Sullivan and Conor Ryan](https://link.springer.com/chapter/10.1007/3-540-45984-7_26)
+
+[An Investigation into the Use of Different Search Strategies with Grammatical Evolution - John O’Sullivan and Conor Ryan](https://link.springer.com/chapter/10.1007/3-540-45984-7_26)
 - ![Publications](https://github.com/johnosbb/Grammatical-Evolution/blob/main/gp.png?raw=true)
 - [Ripple Crossover in Grammatical Evolution](https://github.com/johnosbb/Grammatical-Evolution/blob/main/paper.pdf)
 
