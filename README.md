@@ -12,7 +12,7 @@ This research demonstrates GE's ability to work successfully and seamlessly with
 
 
 
-## My Publications
+## My Publications in this Area
 [Masters Thesis in full is available here](https://github.com/johnosbb/Grammatical-Evolution/blob/main/Masters_2001.pdf)
 
 [An Investigation into the Use of Different Search Strategies with Grammatical Evolution - John O’Sullivan and Conor Ryan](https://link.springer.com/chapter/10.1007/3-540-45984-7_26)
