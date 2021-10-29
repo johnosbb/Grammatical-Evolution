@@ -17,13 +17,14 @@ This research demonstrates GE's ability to work successfully and seamlessly with
 
 [An Investigation into the Use of Different Search Strategies with Grammatical Evolution - John O’Sullivan and Conor Ryan](https://link.springer.com/chapter/10.1007/3-540-45984-7_26)
 
-[Ripple Crossover in Grammatical Evolution](https://github.com/johnosbb/Grammatical-Evolution/blob/main/paper.pdf)
+[Ripple Crossover in Grammatical Evolution  - John O’Sullivan and Conor Ryan](https://github.com/johnosbb/Grammatical-Evolution/blob/main/paper.pdf)
 
 ![Publications](https://github.com/johnosbb/Grammatical-Evolution/blob/main/gp.png?raw=true)
 
 
 ## Links
 - [GA in Python](https://towardsdatascience.com/introducing-geneal-a-genetic-algorithm-python-library-db69abfc212c)
+- [Handbook of Grammatical Evolution](https://link.springer.com/book/10.1007/978-3-319-78717-6)
 
 ## Code
 The code provided is only for reference. It was used as part of my original research, but is now very old and requires refactoring.
