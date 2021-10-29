@@ -10,13 +10,15 @@ We attempt to profile the problem search spaces revealing complex, noisy, discon
 This research demonstrates GE's ability to work successfully and seamlessly with a broad range of different search approaches and identifies  distinct performance advantages for population based approaches like EP, ES and GAs. This flexibility establishes GE as a powerful and flexible mechanism for the automatic generation of grammar based code and programs. 
 
 
+
+
+## My Publications
 [Masters Thesis in full is available here](https://github.com/johnosbb/Grammatical-Evolution/blob/main/Masters_2021.pdf)
 
-## Other Publications
-
 [An Investigation into the Use of Different Search Strategies with Grammatical Evolution - John O’Sullivan and Conor Ryan](https://link.springer.com/chapter/10.1007/3-540-45984-7_26)
-- ![Publications](https://github.com/johnosbb/Grammatical-Evolution/blob/main/gp.png?raw=true)
-- [Ripple Crossover in Grammatical Evolution](https://github.com/johnosbb/Grammatical-Evolution/blob/main/paper.pdf)
+
+![Publications](https://github.com/johnosbb/Grammatical-Evolution/blob/main/gp.png?raw=true)
+[Ripple Crossover in Grammatical Evolution](https://github.com/johnosbb/Grammatical-Evolution/blob/main/paper.pdf)
 
 ## Links
 - [GA in Python](https://towardsdatascience.com/introducing-geneal-a-genetic-algorithm-python-library-db69abfc212c)
