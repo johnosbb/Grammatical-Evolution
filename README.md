@@ -25,3 +25,5 @@ This research demonstrates GE's ability to work successfully and seamlessly with
 ## Links
 - [GA in Python](https://towardsdatascience.com/introducing-geneal-a-genetic-algorithm-python-library-db69abfc212c)
 
+## Code
+The code provided is only for reference. It was used as part of my original research, but is now very old and requires refactoring.
