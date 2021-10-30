@@ -17,7 +17,6 @@ This research demonstrates GE's ability to work successfully and seamlessly with
 
 [An Investigation into the Use of Different Search Strategies with Grammatical Evolution - John O’Sullivan and Conor Ryan](https://link.springer.com/chapter/10.1007/3-540-45984-7_26)
 
-[Ripple Crossover in Grammatical Evolution  - John O’Sullivan and Conor Ryan](https://github.com/johnosbb/Grammatical-Evolution/blob/main/paper.pdf)
 
 ![Publications](https://github.com/johnosbb/Grammatical-Evolution/blob/main/gp.png?raw=true)
 
